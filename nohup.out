@@ -1,0 +1,697 @@
+Bottle v0.12.7 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+Bottle v0.12.7 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "mongorestapi.py", line 82, in <module>
+    run(host='0.0.0.0', port=8080)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 3114, in run
+    server.run(app)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 2768, in run
+    srv = make_server(self.host, self.port, app, server_cls, handler_cls)
+  File "/usr/lib64/python2.6/wsgiref/simple_server.py", line 181, in make_server
+    server = server_class((host, port), handler_class)
+  File "/usr/lib64/python2.6/SocketServer.py", line 402, in __init__
+    self.server_bind()
+  File "/usr/lib64/python2.6/wsgiref/simple_server.py", line 50, in server_bind
+    HTTPServer.server_bind(self)
+  File "/usr/lib64/python2.6/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib64/python2.6/SocketServer.py", line 413, in server_bind
+    self.socket.bind(self.server_address)
+  File "<string>", line 1, in bind
+socket.error: [Errno 98] Address already in use
+Bottle v0.12.7 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "sqlrestapi.py", line 71, in <module>
+    run(host='0.0.0.0', port=8080)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 3114, in run
+    server.run(app)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 2768, in run
+    srv = make_server(self.host, self.port, app, server_cls, handler_cls)
+  File "/usr/lib64/python2.6/wsgiref/simple_server.py", line 181, in make_server
+    server = server_class((host, port), handler_class)
+  File "/usr/lib64/python2.6/SocketServer.py", line 402, in __init__
+    self.server_bind()
+  File "/usr/lib64/python2.6/wsgiref/simple_server.py", line 50, in server_bind
+    HTTPServer.server_bind(self)
+  File "/usr/lib64/python2.6/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib64/python2.6/SocketServer.py", line 413, in server_bind
+    self.socket.bind(self.server_address)
+  File "<string>", line 1, in bind
+socket.error: [Errno 98] Address already in use
+  File "mongorestapi.py", line 107
+    print rows
+    ^
+IndentationError: unexpected indent
+  File "mongorestapi.py", line 107
+    print rows
+    ^
+IndentationError: unexpected indent
+Bottle v0.12.7 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+Bottle v0.12.7 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 91, in post_document
+    cursor=db.cursor()
+  File "/usr/lib64/python2.6/site-packages/pymongo/collection.py", line 1705, in __call__
+    self.__name)
+TypeError: 'Collection' object is not callable. If you meant to call the 'cursor' method on a 'Database' object it is failing because no such method exists.
+172.56.39.231 - - [08/Dec/2014 02:42:25] "POST /shoes HTTP/1.1" 500 787
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 111, in get_document
+    return str(rows)
+UnboundLocalError: local variable 'rows' referenced before assignment
+172.56.39.231 - - [08/Dec/2014 02:42:41] "GET /shoe/12345 HTTP/1.1" 500 792
+Bottle v0.12.7 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "mongorestapi.py", line 142, in <module>
+    run(host='0.0.0.0', port=8080)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 3114, in run
+    server.run(app)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 2768, in run
+    srv = make_server(self.host, self.port, app, server_cls, handler_cls)
+  File "/usr/lib64/python2.6/wsgiref/simple_server.py", line 181, in make_server
+    server = server_class((host, port), handler_class)
+  File "/usr/lib64/python2.6/SocketServer.py", line 402, in __init__
+    self.server_bind()
+  File "/usr/lib64/python2.6/wsgiref/simple_server.py", line 50, in server_bind
+    HTTPServer.server_bind(self)
+  File "/usr/lib64/python2.6/BaseHTTPServer.py", line 108, in server_bind
+    SocketServer.TCPServer.server_bind(self)
+  File "/usr/lib64/python2.6/SocketServer.py", line 413, in server_bind
+    self.socket.bind(self.server_address)
+  File "<string>", line 1, in bind
+socket.error: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 111, in get_document
+    return str(rows)
+UnboundLocalError: local variable 'rows' referenced before assignment
+172.56.39.231 - - [08/Dec/2014 02:50:43] "GET /shoe/12345 HTTP/1.1" 500 792
+Bottle v0.12.7 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+172.56.39.231 - - [08/Dec/2014 02:53:36] "GET /shoe/12345 HTTP/1.1" 200 48
+172.56.39.231 - - [08/Dec/2014 02:53:48] "GET /shirt/12345 HTTP/1.1" 200 236
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 89, in post_document
+    entity=json.load(data)
+  File "/usr/lib64/python2.6/json/__init__.py", line 267, in load
+    parse_constant=parse_constant, **kw)
+  File "/usr/lib64/python2.6/json/__init__.py", line 307, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.6/json/decoder.py", line 319, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python2.6/json/decoder.py", line 336, in raw_decode
+    obj, end = self._scanner.iterscan(s, **kw).next()
+  File "/usr/lib64/python2.6/json/scanner.py", line 55, in iterscan
+    rval, next_pos = action(m, context)
+  File "/usr/lib64/python2.6/json/decoder.py", line 193, in JSONObject
+    raise ValueError(errmsg("Expecting , delimiter", s, end - 1))
+ValueError: Expecting , delimiter: line 4 column 1 (char 45)
+172.56.39.231 - - [08/Dec/2014 02:57:13] "POST /shoes HTTP/1.1" 500 787
+172.56.39.231 - - [08/Dec/2014 02:59:15] "POST /shoes HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 02:59:40] "GET /shoe/123456 HTTP/1.1" 200 48
+172.56.39.231 - - [08/Dec/2014 03:00:46] "DELETE /shoe/123456 HTTP/1.1" 405 785
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 137, in put_document
+    cursor.execute(sql,data)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: not all arguments converted during string formatting
+172.56.39.231 - - [08/Dec/2014 03:01:21] "DELETE /shoes HTTP/1.1" 500 787
+61.33.231.239 - - [08/Dec/2014 03:02:36] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 137, in put_document
+    cursor.execute(sql,data)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: not all arguments converted during string formatting
+172.56.39.231 - - [08/Dec/2014 03:02:52] "DELETE /shoes HTTP/1.1" 500 787
+172.56.39.231 - - [08/Dec/2014 03:03:47] "GET /shoes HTTP/1.1" 405 779
+172.56.39.231 - - [08/Dec/2014 03:05:20] "GET /shoe/123456 HTTP/1.1" 200 48
+172.56.39.231 - - [08/Dec/2014 03:06:04] "DELETE /shoe/123456 HTTP/1.1" 405 785
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 137, in put_document
+    cursor.execute(sql,data)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 187, in execute
+    query = query % tuple([db.literal(item) for item in args])
+TypeError: not all arguments converted during string formatting
+172.56.39.231 - - [08/Dec/2014 03:06:12] "DELETE /shoes HTTP/1.1" 500 787
+172.56.39.231 - - [08/Dec/2014 03:06:42] "POST /shoes HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 03:07:18] "GET /shoe/90000 HTTP/1.1" 200 48
+172.56.39.231 - - [08/Dec/2014 03:12:27] "POST /shirts HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 03:12:54] "POST /shirts HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 03:13:12] "GET /shirt/10001 HTTP/1.1" 200 242
+172.56.39.231 - - [08/Dec/2014 03:13:33] "GET /shirt/10000 HTTP/1.1" 200 242
+172.56.39.231 - - [08/Dec/2014 03:14:44] "PUT /shirts HTTP/1.1" 200 2
+172.56.39.231 - - [08/Dec/2014 03:15:00] "GET /shirt/10001 HTTP/1.1" 200 178
+172.56.39.231 - - [08/Dec/2014 03:15:18] "DELETE /shirts HTTP/1.1" 200 7
+172.56.39.231 - - [08/Dec/2014 03:15:37] "GET /shirt/10001 HTTP/1.1" 404 779
+172.56.39.231 - - [08/Dec/2014 03:15:55] "GET /shirt/10000 HTTP/1.1" 200 242
+172.56.39.231 - - [08/Dec/2014 03:17:47] "POST /shoes HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 03:18:10] "DELETE /shoe/1 HTTP/1.1" 405 780
+172.56.39.231 - - [08/Dec/2014 03:18:57] "PUT /shoes HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 03:19:30] "GET /shoe/1 HTTP/1.1" 200 48
+172.56.39.231 - - [08/Dec/2014 03:21:04] "PUT /shoes HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 03:21:52] "PUT /shoes HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 03:22:17] "DELETE /shoes HTTP/1.1" 200 7
+Bottle v0.12.7 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+172.56.39.231 - - [08/Dec/2014 03:27:06] "GET /shoe/90000 HTTP/1.1" 200 48
+58.6.20.201 - - [08/Dec/2014 03:43:18] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+172.56.39.231 - - [08/Dec/2014 03:52:29] "POST /shoes HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 03:52:46] "GET /shoe/2 HTTP/1.1" 200 44
+172.56.39.231 - - [08/Dec/2014 03:53:08] "PUT /shoes HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 03:53:22] "GET /shoe/2 HTTP/1.1" 200 44
+172.56.39.231 - - [08/Dec/2014 03:53:38] "DELETE /shoes HTTP/1.1" 200 7
+172.56.39.231 - - [08/Dec/2014 03:55:42] "POST /shirts HTTP/1.1" 200 8
+172.56.39.231 - - [08/Dec/2014 03:55:54] "GET /shirt/1 HTTP/1.1" 200 238
+172.56.39.231 - - [08/Dec/2014 03:56:28] "PUT /shirts HTTP/1.1" 200 2
+172.56.39.231 - - [08/Dec/2014 03:56:37] "PUT /shirts HTTP/1.1" 200 2
+172.56.39.231 - - [08/Dec/2014 03:56:57] "GET /shirt/1 HTTP/1.1" 200 173
+172.56.39.231 - - [08/Dec/2014 03:57:14] "DELETE /shirts HTTP/1.1" 200 7
+172.56.39.231 - - [08/Dec/2014 03:57:36] "GET /shirt/1 HTTP/1.1" 404 771
+151.229.145.78 - - [08/Dec/2014 04:07:54] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+50.148.185.18 - - [08/Dec/2014 04:10:57] "GET /shooes HTTP/1.1" 404 773
+50.148.185.18 - - [08/Dec/2014 04:10:57] "GET /favicon.ico HTTP/1.1" 404 783
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 89, in post_document
+    entity=json.load(data)
+  File "/usr/lib64/python2.6/json/__init__.py", line 267, in load
+    parse_constant=parse_constant, **kw)
+  File "/usr/lib64/python2.6/json/__init__.py", line 307, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.6/json/decoder.py", line 319, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python2.6/json/decoder.py", line 336, in raw_decode
+    obj, end = self._scanner.iterscan(s, **kw).next()
+  File "/usr/lib64/python2.6/json/scanner.py", line 55, in iterscan
+    rval, next_pos = action(m, context)
+  File "/usr/lib64/python2.6/json/decoder.py", line 193, in JSONObject
+    raise ValueError(errmsg("Expecting , delimiter", s, end - 1))
+ValueError: Expecting , delimiter: line 4 column 1 (char 50)
+50.148.185.18 - - [08/Dec/2014 04:12:56] "POST /shoes HTTP/1.1" 500 787
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 33, in post_document
+    entity = json.loads(data)
+  File "/usr/lib64/python2.6/json/__init__.py", line 307, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.6/json/decoder.py", line 319, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python2.6/json/decoder.py", line 336, in raw_decode
+    obj, end = self._scanner.iterscan(s, **kw).next()
+  File "/usr/lib64/python2.6/json/scanner.py", line 55, in iterscan
+    rval, next_pos = action(m, context)
+  File "/usr/lib64/python2.6/json/decoder.py", line 193, in JSONObject
+    raise ValueError(errmsg("Expecting , delimiter", s, end - 1))
+ValueError: Expecting , delimiter: line 4 column 1 (char 50)
+50.148.185.18 - - [08/Dec/2014 04:14:39] "POST /shirts HTTP/1.1" 500 788
+50.148.185.18 - - [08/Dec/2014 04:15:48] "GET /shooes HTTP/1.1" 404 773
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 53, in put_document
+    entity = json.loads(data)
+  File "/usr/lib64/python2.6/json/__init__.py", line 307, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.6/json/decoder.py", line 319, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python2.6/json/decoder.py", line 336, in raw_decode
+    obj, end = self._scanner.iterscan(s, **kw).next()
+  File "/usr/lib64/python2.6/json/scanner.py", line 55, in iterscan
+    rval, next_pos = action(m, context)
+  File "/usr/lib64/python2.6/json/decoder.py", line 193, in JSONObject
+    raise ValueError(errmsg("Expecting , delimiter", s, end - 1))
+ValueError: Expecting , delimiter: line 4 column 1 (char 50)
+50.148.185.18 - - [08/Dec/2014 04:16:43] "PUT /shirts HTTP/1.1" 500 788
+50.250.242.54 - - [08/Dec/2014 04:18:34] "GET /shoes/1 HTTP/1.1" 404 775
+50.250.242.54 - - [08/Dec/2014 04:18:41] "GET /shoes/2 HTTP/1.1" 404 775
+50.148.185.18 - - [08/Dec/2014 04:19:05] "PUT /shirts HTTP/1.1" 200 2
+50.250.242.54 - - [08/Dec/2014 04:19:09] "PUT /shirts HTTP/1.1" 200 2
+50.148.185.18 - - [08/Dec/2014 04:19:25] "GET /shirts/6578 HTTP/1.1" 404 783
+50.250.242.54 - - [08/Dec/2014 04:19:27] "PUT /shirt/987654321 HTTP/1.1" 405 789
+50.250.242.54 - - [08/Dec/2014 04:19:36] "GET /shirt/987654321 HTTP/1.1" 404 787
+50.250.242.54 - - [08/Dec/2014 04:19:55] "POST /shirts HTTP/1.1" 200 8
+50.250.242.54 - - [08/Dec/2014 04:19:59] "POST /shirt/987654321 HTTP/1.1" 405 789
+50.250.242.54 - - [08/Dec/2014 04:20:03] "GET /shirt/987654321 HTTP/1.1" 200 244
+50.148.185.18 - - [08/Dec/2014 04:20:49] "GET /shirt/987654321 HTTP/1.1" 200 244
+50.148.185.18 - - [08/Dec/2014 04:21:06] "GET /shirt/987654321 HTTP/1.1" 200 244
+50.148.185.18 - - [08/Dec/2014 04:35:17] "POST /shirts HTTP/1.1" 200 8
+50.148.185.18 - - [08/Dec/2014 04:35:46] "GET /shirt/89765 HTTP/1.1" 200 243
+50.148.185.18 - - [08/Dec/2014 04:37:04] "PUT /shirts HTTP/1.1" 200 2
+50.148.185.18 - - [08/Dec/2014 04:37:21] "GET /shirt/89765 HTTP/1.1" 200 166
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 72, in delete_document
+    entity = json.loads(data)
+  File "/usr/lib64/python2.6/json/__init__.py", line 307, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.6/json/decoder.py", line 319, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python2.6/json/decoder.py", line 336, in raw_decode
+    obj, end = self._scanner.iterscan(s, **kw).next()
+  File "/usr/lib64/python2.6/json/scanner.py", line 55, in iterscan
+    rval, next_pos = action(m, context)
+  File "/usr/lib64/python2.6/json/decoder.py", line 198, in JSONObject
+    raise ValueError(errmsg("Expecting property name", s, end - 1))
+ValueError: Expecting property name: line 3 column 1 (char 22)
+50.148.185.18 - - [08/Dec/2014 04:37:50] "DELETE /shirts HTTP/1.1" 500 788
+50.148.185.18 - - [08/Dec/2014 04:38:14] "DELETE /shirts HTTP/1.1" 200 7
+50.148.185.18 - - [08/Dec/2014 04:38:25] "DELETE /shirt/89765 HTTP/1.1" 405 785
+50.148.185.18 - - [08/Dec/2014 04:38:38] "GET /shirt/89765 HTTP/1.1" 404 779
+2.110.216.157 - - [08/Dec/2014 04:38:53] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+50.148.185.18 - - [08/Dec/2014 04:40:01] "PUT /shoes HTTP/1.1" 200 8
+50.148.185.18 - - [08/Dec/2014 04:41:17] "PUT /shirt HTTP/1.1" 404 771
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 53, in put_document
+    entity = json.loads(data)
+  File "/usr/lib64/python2.6/json/__init__.py", line 307, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.6/json/decoder.py", line 319, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python2.6/json/decoder.py", line 336, in raw_decode
+    obj, end = self._scanner.iterscan(s, **kw).next()
+  File "/usr/lib64/python2.6/json/scanner.py", line 55, in iterscan
+    rval, next_pos = action(m, context)
+  File "/usr/lib64/python2.6/json/decoder.py", line 193, in JSONObject
+    raise ValueError(errmsg("Expecting , delimiter", s, end - 1))
+ValueError: Expecting , delimiter: line 4 column 1 (char 47)
+50.148.185.18 - - [08/Dec/2014 04:41:35] "PUT /shirts HTTP/1.1" 500 788
+50.148.185.18 - - [08/Dec/2014 04:41:42] "PUT /shirts HTTP/1.1" 200 2
+50.148.185.18 - - [08/Dec/2014 04:42:10] "PUT /shirt/78965 HTTP/1.1" 405 785
+50.148.185.18 - - [08/Dec/2014 04:42:19] "GET /shirt/78965 HTTP/1.1" 404 779
+50.148.185.18 - - [08/Dec/2014 04:42:45] "POST /shirt/78965 HTTP/1.1" 405 785
+50.148.185.18 - - [08/Dec/2014 04:42:46] "POST /shirt/78965 HTTP/1.1" 405 785
+50.148.185.18 - - [08/Dec/2014 04:43:01] "POST /shirts HTTP/1.1" 200 8
+79.253.250.208 - - [08/Dec/2014 05:07:11] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+195.198.124.214 - - [08/Dec/2014 05:43:41] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+210.245.203.195 - - [08/Dec/2014 05:49:26] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+202.39.237.209 - - [08/Dec/2014 05:53:51] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+223.197.232.193 - - [08/Dec/2014 05:59:33] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+77.215.125.35 - - [08/Dec/2014 06:37:06] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+61.160.247.34 - - [08/Dec/2014 06:41:55] "GET /manager/html HTTP/1.1" 404 749
+109.195.100.193 - - [08/Dec/2014 07:00:41] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+116.80.218.10 - - [08/Dec/2014 07:32:15] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+93.148.98.103 - - [08/Dec/2014 07:59:56] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+121.6.62.250 - - [08/Dec/2014 10:09:31] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+212.101.54.179 - - [08/Dec/2014 11:24:04] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+123.249.19.23 - - [08/Dec/2014 14:26:54] "GET /manager/html HTTP/1.1" 404 749
+221.125.81.73 - - [08/Dec/2014 16:58:47] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+123.249.19.59 - - [08/Dec/2014 18:05:54] "GET /manager/html HTTP/1.1" 404 749
+87.79.144.29 - - [08/Dec/2014 18:13:39] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+50.48.224.214 - - [08/Dec/2014 18:25:15] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+85.241.172.167 - - [08/Dec/2014 18:25:53] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+shoeId = 90000
+('90000', 'testshoe', '2', 'system', '08/12/14')
+{u'shoeName': u'testshoe', u'shoeQuantity': u'6', u'shoeId': u'2', u'createdBy': u'system'}
+shoeId = 2
+('2', 'testshoe', '6', 'system', '08/12/14')
+{u'shoeName': u'testshoe', u'shoeQuantity': u'8', u'shoeId': u'2', u'createdBy': u'system'}
+shoeId = 2
+('2', 'testshoe', '8', 'system', '08/12/14')
+{u'shoeName': u'testshoe', u'shoeQuantity': u'8', u'shoeId': u'2', u'createdBy': u'system'}
+data = {
+"shirtId": "1",
+"shirtName": "testshirt",
+"shirtDescription": "testDesc",
+"shirtPrice": "24",
+"createdBy": "system"
+}
+
+
+
+
+date = 08/12/14
+shirtId = 1
+data = {
+"shirtId": "1",
+"shirtName": "testshirt",
+"shirtDescription": "testDesc",
+"shirtPrice": "24",
+"createdBy": "system"
+}
+
+
+
+
+shirId = 1
+mongo data = {u'shirtPrice': u'24', u'shirtName': u'testshirt', u'createdAt': datetime.datetime(2014, 12, 8, 3, 55, 42, 110000), u'createdBy': u'system', u'shirtId': u'1', u'_id': ObjectId('5485213e131da52ad44155c6'), u'shirtDescription': u'testDesc'}
+data = {
+"shirtId": "1",
+"shirtName": "testshirt",
+"shirtDescription": "testDesc",
+"shirtPrice": "20",
+"createdBy": "system"
+}
+
+
+
+
+shirId = 1
+mongo data = {u'shirtPrice': u'24', u'shirtName': u'testshirt', u'createdBy': u'system', u'shirtId': u'1', u'_id': ObjectId('5485213e131da52ad44155c6'), u'shirtDescription': u'testDesc'}
+shirtId = 1
+data = {
+"shirtId": "1",
+"shirtName": "testshirt",
+"shirtDescription": "testDesc",
+"shirtPrice": "20",
+"createdBy": "system"
+}
+
+
+
+
+shirId = 1
+mongo data = {u'shirtPrice': u'20', u'shirtName': u'testshirt', u'createdBy': u'system', u'shirtId': u'1', u'_id': ObjectId('5485213e131da52ad44155c6'), u'shirtDescription': u'testDesc'}
+shirtId = 1
+data = {
+"shirtId": "6578",
+"shirtName": "calvien klien"
+"shirtDescription": "white",
+"shirtPrice": "65",
+"createdBy": "system"
+}
+
+data = {
+"shirtId": "6578",
+"shirtName": "calvien klien"
+"shirtDescription": "white",
+"shirtPrice": "65",
+"createdBy": "system"
+}
+
+data = {
+"shirtId": "6578",
+"shirtName": "calvien klien",
+"shirtDescription": "white",
+"shirtPrice": "65",
+"createdBy": "system"
+}
+
+shirId = 6578
+mongo data = None
+Error: 'NoneType' object is unsubscriptable
+data = {
+"shirtId": "987654321",
+"shirtName": "testshirt",
+"shirtDescription": "testDesc",
+"shirtPrice": "24",
+"createdBy": "Akrati"
+}
+
+shirId = 987654321
+mongo data = None
+Error: 'NoneType' object is unsubscriptable
+shirtId = 987654321
+data = {
+"shirtId": "987654321",
+"shirtName": "testshirt",
+"shirtDescription": "testDesc",
+"shirtPrice": "24",
+"createdBy": "Akrati"
+}
+
+date = 08/12/14
+shirtId = 987654321
+shirtId = 987654321
+shirtId = 987654321
+data = {
+"shirtId": "89765",
+"shirtName": "calvien klien",
+"shirtDescription": "white",
+"shirtPrice": "65",
+"createdBy": "system"
+}
+
+date = 08/12/14
+shirtId = 89765
+data = {
+"shirtId": "89765",
+"shirtName": "gap",
+"shirtDescription": "red",
+"shirtPrice": "65",
+"createdBy": "system"
+}
+
+shirId = 89765
+mongo data = {u'shirtPrice': u'65', u'shirtName': u'calvien klien', u'createdAt': datetime.datetime(2014, 12, 8, 4, 35, 17, 191000), u'createdBy': u'system', u'shirtId': u'89765', u'_id': ObjectId('54852a85131da52ad44155c8'), u'shirtDescription': u'white'}
+shirtId = 89765
+data = {
+"shirtId": "89765",
+}
+
+data = {
+"shirtId": "89765"
+
+}
+
+shirId = 89765
+mongo data = {u'shirtPrice': u'65', u'shirtName': u'gap', u'createdBy': u'system', u'shirtId': u'89765', u'_id': ObjectId('54852a85131da52ad44155c8'), u'shirtDescription': u'red'}
+shirtId = 89765
+{u'shoeName': u'sketchers', u'shoeQuantity': u'8', u'shoeId': u'99999', u'createdBy': u'sayantani'}
+data = {
+"shirtId": "78965",
+"shirtName": "testshirt"
+"shirtDescription": "testDesc",
+"shirtPrice": "24",
+"createdBy": "system"
+}
+data = {
+"shirtId": "78965",
+"shirtName": "testshirt",
+"shirtDescription": "testDesc",
+"shirtPrice": "24",
+"createdBy": "system"
+}
+shirId = 78965
+mongo data = None
+Error: 'NoneType' object is unsubscriptable
+shirtId = 78965
+data = {
+"shirtId": "78965",
+"shirtName": "testshirt",
+"shirtDescription": "testDesc",
+"shirtPrice": "24",
+"createdBy": "system"
+}
+date = 08/12/14
+data = {
+"shirtId": "4567",
+"shirtName":50.148.185.18 - - [08/Dec/2014 18:30:51] "PUT /shirts HTTP/1.1" 200 2
+50.148.185.18 - - [08/Dec/2014 18:31:14] "POST /shirts HTTP/1.1" 200 8
+50.148.185.18 - - [08/Dec/2014 19:00:01] "POST /shirts HTTP/1.1" 200 8
+50.148.185.18 - - [08/Dec/2014 19:00:40] "GET /shirt/20145 HTTP/1.1" 200 237
+50.148.185.18 - - [08/Dec/2014 19:01:22] "PUT /shirt/20145 HTTP/1.1" 405 785
+50.148.185.18 - - [08/Dec/2014 19:01:38] "PUT /shirts HTTP/1.1" 200 2
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 72, in delete_document
+    entity = json.loads(data)
+  File "/usr/lib64/python2.6/json/__init__.py", line 307, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib64/python2.6/json/decoder.py", line 319, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib64/python2.6/json/decoder.py", line 336, in raw_decode
+    obj, end = self._scanner.iterscan(s, **kw).next()
+  File "/usr/lib64/python2.6/json/scanner.py", line 55, in iterscan
+    rval, next_pos = action(m, context)
+  File "/usr/lib64/python2.6/json/decoder.py", line 198, in JSONObject
+    raise ValueError(errmsg("Expecting property name", s, end - 1))
+ValueError: Expecting property name: line 4 column 1 (char 23)
+50.148.185.18 - - [08/Dec/2014 19:01:57] "DELETE /shirts HTTP/1.1" 500 788
+50.148.185.18 - - [08/Dec/2014 19:02:02] "DELETE /shirts HTTP/1.1" 200 7
+50.148.185.18 - - [08/Dec/2014 19:02:18] "GET /shirt/20145 HTTP/1.1" 404 779
+80.139.136.36 - - [08/Dec/2014 19:10:56] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 111, in get_document
+    return str(rows)
+UnboundLocalError: local variable 'rows' referenced before assignment
+130.65.11.68 - - [08/Dec/2014 19:54:14] "GET /shoe/90000 HTTP/1.1" 500 792
+130.65.11.68 - - [08/Dec/2014 19:55:01] "GET /shirt/1 HTTP/1.1" 404 771
+130.65.11.68 - - [08/Dec/2014 19:57:35] "GET /shirt/10000 HTTP/1.1" 200 242
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 111, in get_document
+    return str(rows)
+UnboundLocalError: local variable 'rows' referenced before assignment
+130.65.11.68 - - [08/Dec/2014 19:57:53] "GET /shoe/123456 HTTP/1.1" 500 793
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 111, in get_document
+    return str(rows)
+UnboundLocalError: local variable 'rows' referenced before assignment
+130.65.11.68 - - [08/Dec/2014 19:58:01] "GET /shoe/90000 HTTP/1.1" 500 792
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 111, in get_document
+    return str(rows)
+UnboundLocalError: local variable 'rows' referenced before assignment
+130.65.11.68 - - [08/Dec/2014 19:58:09] "GET /shoe/2 HTTP/1.1" 500 788
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 96, in post_document
+    cursor.execute(sql,data)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+130.65.11.68 - - [08/Dec/2014 19:58:52] "POST /shoes HTTP/1.1" 500 787
+130.65.11.68 - - [08/Dec/2014 20:06:49] "POST /shirts HTTP/1.1" 400 763
+130.65.11.68 - - [08/Dec/2014 20:07:25] "POST /shirts HTTP/1.1" 200 8
+130.65.11.68 - - [08/Dec/2014 20:07:43] "GET /shirt/123 HTTP/1.1" 200 239
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 111, in get_document
+    return str(rows)
+UnboundLocalError: local variable 'rows' referenced before assignment
+130.65.11.68 - - [08/Dec/2014 20:08:22] "GET /shoe/2 HTTP/1.1" 500 788
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 96, in post_document
+    cursor.execute(sql,data)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+130.65.11.68 - - [08/Dec/2014 20:09:01] "POST /shoes HTTP/1.1" 500 787
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 96, in post_document
+    cursor.execute(sql,data)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+130.65.11.68 - - [08/Dec/2014 20:09:02] "POST /shoes HTTP/1.1" 500 787
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 96, in post_document
+    cursor.execute(sql,data)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib64/python2.6/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, 'MySQL server has gone away')
+130.65.11.68 - - [08/Dec/2014 20:09:05] "POST /shoes HTTP/1.1" 500 787
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 862, in _handle
+    return route.call(**args)
+  File "/usr/lib/python2.6/site-packages/bottle.py", line 1729, in wrapper
+    rv = callback(*a, **ka)
+  File "mongorestapi.py", line 111, in get_document
+    return str(rows)
+UnboundLocalError: local variable 'rows' referenced before assignment
+130.65.11.68 - - [08/Dec/2014 20:09:55] "GET /shoe/12345 HTTP/1.1" 500 792
+184.153.242.204 - - [08/Dec/2014 20:10:42] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+Bottle v0.12.7 server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:8080/
+Hit Ctrl-C to quit.
+
+130.65.11.68 - - [08/Dec/2014 20:13:49] "GET /shoe/12345 HTTP/1.1" 200 48
+130.65.11.68 - - [08/Dec/2014 20:14:06] "POST /shoes HTTP/1.1" 200 8
+130.65.11.68 - - [08/Dec/2014 20:14:20] "GET /shoe/123 HTTP/1.1" 200 46
+81.221.64.229 - - [08/Dec/2014 20:21:48] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+107.147.74.172 - - [08/Dec/2014 20:22:17] "GET /tmUnblock.cgi HTTP/1.1" 404 779
+95.232.188.128 - - [08/Dec/2014 21:06:50] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+176.109.48.210 - - [08/Dec/2014 21:47:54] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+79.114.37.21 - - [08/Dec/2014 22:00:36] "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 757
+130.65.11.68 - - [08/Dec/2014 22:52:00] "GET /shoe/123 HTTP/1.1" 200 46
